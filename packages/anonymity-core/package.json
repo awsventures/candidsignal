@@ -1,0 +1,33 @@
+{
+  "name": "@aws-cbd/anonymity-core",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Blind-signed one-time tokens delivering mathematical anonymity (prototype). RFC 9474 RSABSSA, no ZK circuit, no trusted setup; single audited runtime dependency (@cloudflare/blindrsa-ts).",
+  "license": "Apache-2.0",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "engines": {
+    "node": ">=22.6.0"
+  },
+  "scripts": {
+    "demo": "node --experimental-strip-types --disable-warning=ExperimentalWarning demo/demo.ts",
+    "audit": "node --experimental-strip-types --disable-warning=ExperimentalWarning audit/audit.ts",
+    "test": "node --experimental-strip-types --disable-warning=ExperimentalWarning --test test/blind-rsa.test.ts test/properties.test.ts test/encoding.test.ts test/key-lifecycle.test.ts test/merkle-log.test.ts test/audit.test.ts"
+  },
+  "keywords": [
+    "blind-signature",
+    "anonymity",
+    "privacy-pass",
+    "rsa",
+    "survey",
+    "zero-knowledge-free"
+  ],
+  "dependencies": {
+    "@cloudflare/blindrsa-ts": "^0.4.4"
+  },
+  "devDependencies": {
+    "fast-check": "^4.8.0"
+  }
+}

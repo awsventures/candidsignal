@@ -1,0 +1,29 @@
+{
+  "name": "@aws-cbd/services",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Trust services (issuer, verifier, STH publisher) for AWS Confidential-by-Design. This milestone: the libSQL storage layer with DB-enforced uniqueness invariants.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "engines": {
+    "node": ">=22.6.0"
+  },
+  "scripts": {
+    "test": "node --experimental-strip-types --disable-warning=ExperimentalWarning --test test/storage.test.ts test/issuer-service.test.ts test/verifier-service.test.ts test/sth-publisher.test.ts test/git-sth-target.test.ts",
+    "publish-sth": "node --experimental-strip-types --disable-warning=ExperimentalWarning src/publish-sth-cli.ts"
+  },
+  "keywords": [
+    "anonymity",
+    "blind-signature",
+    "transparency-log",
+    "libsql",
+    "sqlite"
+  ],
+  "dependencies": {
+    "@libsql/client": "^0.15.0",
+    "hono": "^4.12.28"
+  }
+}

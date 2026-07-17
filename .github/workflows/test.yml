@@ -1,0 +1,37 @@
+name: test
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        package: [anonymity-core, services, sdk-server, sdk-web]
+    defaults:
+      run:
+        working-directory: packages/${{ matrix.package }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      # Every package imports anonymity-core by relative path, so its deps must
+      # be installed regardless of which package is under test.
+      - run: npm ci
+        working-directory: packages/anonymity-core
+      # sdk-server's and sdk-web's tests drive the REAL issuer/verifier from
+      # services, so that package's deps must be present for those jobs too.
+      - run: npm ci
+        if: matrix.package == 'sdk-server' || matrix.package == 'sdk-web'
+        working-directory: packages/services
+      # sdk-web's tests also mint assertions via the real sdk-server.
+      - run: npm ci
+        if: matrix.package == 'sdk-web'
+        working-directory: packages/sdk-server
+      - run: npm ci
+        if: matrix.package != 'anonymity-core'
+      - run: npm test
