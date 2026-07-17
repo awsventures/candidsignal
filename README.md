@@ -13,7 +13,7 @@ untraceable to individuals, without either party trusting the other.
   per-survey issued/redeemed counter is appended to a signed Merkle
   transparency log (RFC 6962/9162, the mechanism behind Certificate
   Transparency), mirrored publicly at
-  [aws-cbd-transparency-log](https://github.com/awsventures/aws-cbd-transparency-log).
+  [aws-candidsignal-transparency-log](https://github.com/awsventures/aws-candidsignal-transparency-log).
   Tampering is detectable, not impossible — and we say so.
 
 Live demo: **https://app.candidsignal.com** — take a survey as a fake
