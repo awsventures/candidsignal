@@ -2,7 +2,7 @@
 
 The small library a survey vendor runs on **their own backend** to participate
 in the confidential-by-design flow (Profile A of the
-[data-flow-topology ADR](../../docs/04-implementation-plan/adr/2026-07-01-data-flow-topology.md)).
+data-flow-topology ADR (design notes, private repo)).
 It does three things and nothing else — no survey logic, no dashboards, no
 respondent state:
 

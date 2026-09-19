@@ -2,7 +2,7 @@
   "name": "@aws-cbd/services",
   "version": "0.0.1",
   "private": true,
-  "description": "Trust services (issuer, verifier, STH publisher) for AWS Confidential-by-Design. This milestone: the libSQL storage layer with DB-enforced uniqueness invariants.",
+  "description": "Trust services (issuer, verifier, STH publisher) for CandidSignal. This milestone: the libSQL storage layer with DB-enforced uniqueness invariants.",
   "license": "Apache-2.0",
   "type": "module",
   "exports": {

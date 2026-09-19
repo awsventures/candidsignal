@@ -2,7 +2,7 @@
   "name": "@aws-cbd/sdk-web",
   "version": "0.0.1",
   "private": true,
-  "description": "Respondent-browser SDK for AWS Confidential-by-Design: blind a token locally, redeem it for a commitment-bound receipt, and hand the vendor an answer they can verify — with retry-safe, session-scoped state.",
+  "description": "Respondent-browser SDK for CandidSignal: blind a token locally, redeem it for a commitment-bound receipt, and hand the vendor an answer they can verify, with retry-safe, session-scoped state.",
   "license": "Apache-2.0",
   "type": "module",
   "exports": {

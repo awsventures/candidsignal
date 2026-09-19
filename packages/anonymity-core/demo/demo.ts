@@ -34,7 +34,7 @@ function short(bytes: Uint8Array): string {
     : `${hex.slice(0, 10)}…${hex.slice(-6)} (${bytes.length * 8} bits)`;
 }
 
-console.log("\n=== AWS Confidential-by-Design — blind-token prototype (RFC 9474) ===\n");
+console.log("\n=== CandidSignal: blind-token anonymity core (RFC 9474) ===\n");
 
 // --- Setup: the issuer generates a key for one survey context. ---
 console.log(

@@ -1,4 +1,4 @@
-# @aws-cbd/services (prototype)
+# @aws-cbd/services
 
 The trust services — issuer, verifier, STH publisher — for AWS
 Confidential-by-Design. They are built on one narrow storage layer whose

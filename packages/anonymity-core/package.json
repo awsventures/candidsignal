@@ -2,7 +2,7 @@
   "name": "@aws-cbd/anonymity-core",
   "version": "0.0.1",
   "private": true,
-  "description": "Blind-signed one-time tokens delivering mathematical anonymity (prototype). RFC 9474 RSABSSA, no ZK circuit, no trusted setup; single audited runtime dependency (@cloudflare/blindrsa-ts).",
+  "description": "Blind-signed one-time tokens delivering mathematical anonymity for CandidSignal. RFC 9474 RSABSSA, no ZK circuit, no trusted setup; single audited runtime dependency (@cloudflare/blindrsa-ts).",
   "license": "Apache-2.0",
   "type": "module",
   "exports": {

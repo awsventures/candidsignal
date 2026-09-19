@@ -2,7 +2,7 @@
   "name": "@aws-cbd/sdk-server",
   "version": "0.0.1",
   "private": true,
-  "description": "Vendor-backend SDK for AWS Confidential-by-Design: mint eligibility assertions, verify commitment-bound receipts, derive privacy-preserving subject references.",
+  "description": "Vendor-backend SDK for CandidSignal: mint eligibility assertions, verify commitment-bound receipts, derive privacy-preserving subject references.",
   "license": "Apache-2.0",
   "type": "module",
   "exports": {

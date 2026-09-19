@@ -1,12 +1,12 @@
 # `@aws-cbd/sdk-web` — respondent browser SDK
 
 What a survey vendor's page embeds so the **respondent's browser** runs Profile
-A of the [data-flow-topology ADR](../../docs/04-implementation-plan/adr/2026-07-01-data-flow-topology.md):
+A of the data-flow-topology ADR (design notes, private repo):
 blind a token locally (the issuer signs what it cannot read), redeem it for a
 commitment-bound receipt, and hand the vendor an answer they can verify came
 from exactly one accepted, unlinkable token. Pure TypeScript over WebCrypto —
 no WASM, no runtime dependency beyond `anonymity-core` — per the
-[browser-crypto-delivery ADR](../../docs/04-implementation-plan/adr/2026-07-01-browser-crypto-delivery.md).
+browser-crypto-delivery ADR (design notes, private repo).
 
 ## API — four functions on one client
 
